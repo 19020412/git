@@ -1,0 +1,12 @@
+#include <iostream>
+
+void func(int a[]) {
+	std::cout << sizeof(a);
+}
+
+int main()
+{
+	int a[5];
+	std::cout << sizeof(a) << "\n";
+	func(a);
+}

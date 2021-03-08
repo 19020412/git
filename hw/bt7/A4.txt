@@ -1,0 +1,9 @@
+int binarySearch(int* a, int k, int lo, int hi) 
+{
+	if (hi <= lo) return - 1;
+	int mid = (hi - lo) / 2;
+	if (a[mid] == k) return mid;
+	if (a[mid] > k) return binarySearch(a, k, lo, mid);
+	else return binarySearch(a, k, mid + 1, hi);
+	
+}

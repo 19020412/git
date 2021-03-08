@@ -1,0 +1,22 @@
+
+//con trỏ chưa khởi tạo
+int main()
+{
+	int* ptr;
+	*ptr = 1;
+}
+
+//truy nhập con trỏ null
+int main()
+{
+	int* ptr = NULL;
+	*ptr = 1;
+}
+
+//dangling references
+int* sum(int a, int b)
+{
+	int c = a + b;
+	return &c;
+}
+
