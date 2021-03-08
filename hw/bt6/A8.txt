@@ -1,0 +1,26 @@
+#include <iostream>
+
+void combination(bool* a, int n, int k) 
+{
+	if (k < 1) {
+		for (int i = 0; i < n; i++) {
+			if (a[i]) std::cout << i+1 << ",";
+		}
+		std::cout << "\n";
+		return;
+	}
+	a[k] = true;
+	combination(a, n, k - 1);
+	a[k] = false;
+	combination(a, n, k - 1);
+}
+
+int main()
+{
+	int n;
+	std::cin >> n;
+	bool* a = new bool[n];
+	for (int i = 0; i < n; i++)
+		a[n] = true;
+	combination(a, n, n-1);
+}

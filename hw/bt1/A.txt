@@ -1,0 +1,19 @@
+
+  1)  bool isA = (90 <= grade && grade <= 100);
+  2)  0
+  3)
+  4)  false
+  5)  warning
+  6)  build failed
+  7)  0
+      0.75
+      0.75
+      0.75
+  8)  build failed
+  9)
+  10)
+  11) (F-32) * (5/9) == (F-32) * 0
+  12) "here"
+
+
+

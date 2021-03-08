@@ -1,0 +1,23 @@
+#include <iostream>
+
+long F(int n)
+{
+	if (n == 0) return 0;
+	if (n == 1) return 1;
+	return F(n - 1) + F(n - 2);
+}
+
+
+int main()
+{
+	int n;
+	std::cin >> n;
+	long a = 0, b = 1;
+	for (int i = 1; i < n; i++) {
+		long c = b;
+		b += a;
+		a = c;
+	}
+	std::cout << b << "\n";
+	std::cout << F(n) << "\n";
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+
+int* func(int a[]) {
+	int* r = a;
+	return r;
+}
+
+int main() {
+	int a[3];
+	if (a == func(a)) std::cout << "pass by reference";
+	else std::cout << "pass by value";
+}
+
